@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 24px;
+  font-family: "Space Mono";
+  letter-spacing: -0.035em;
+}
+
+header {
+  margin-bottom: 20%;
+}
+
+.logo {
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+main {
+  margin-bottom: 114px;
+}
+
+.main-img {
+  max-width: 540px;
+  margin-bottom: 60px;
+}
+
+.main-txt {
+  font-weight: 700;
+  font-size: 44px;
+  color: #333333;
+  max-width: 16ch;
+  margin-bottom: 2rem;
+}
+
+.sub-txt {
+  font-size: 18px;
+  color: #4f4f4f;
+  max-width: 26ch;
+  margin-bottom: 4rem;
+}
+
+.main-button {
+  border: none;
+  background: #333333;
+  color: #ffffff;
+  padding: 24px 44px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+footer > p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+footer a,
+footer a:focus {
+  color: currentColor;
+}
+
+@media (min-width: 56rem) {
+  body {
+    padding: 40px 78px 24px;
+  }
+
+  header {
+    margin-bottom: 180px;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+    margin-bottom: 122px;
+  }
+
+  .main-img {
+    flex: 6;
+  }
+
+  .main-content {
+    flex: 5;
+  }
+
+  .main-txt {
+    font-size: 64px;
+  }
+
+  .sub-txt {
+    font-size: 24px;
+  }
+}
