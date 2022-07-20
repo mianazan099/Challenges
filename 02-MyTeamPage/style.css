@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  padding: 70px 16px 24px;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-bottom: 48px;
+}
+
+.content > h1 {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.045em;
+}
+
+.content .right h4 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content .right p {
+  font-family: "Poppins";
+  font-size: 14px;
+  max-width: 35ch;
+}
+
+.images-deck {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 120px;
+}
+
+.upper {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.img img {
+  aspect-ratio: 2/3;
+}
+
+.roll {
+  font-family: "PT Serif";
+  font-size: 10px;
+  text-transform: uppercase;
+  position: absolute;
+  right: var(--pr, 0);
+  top: var(--pt, 0);
+  transform: rotate(90deg);
+}
+
+.image > h4 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.image:nth-child(2),
+.image:nth-child(4),
+.image:nth-child(6) {
+  margin-top: 48px;
+}
+
+footer {
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+footer a,
+footer a:focus {
+  color: currentColor;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding: 110px 24px 24px;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 96px;
+  }
+
+  .images-deck {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+  }
+
+  .image:nth-child(4),
+  .image:nth-child(6) {
+    margin-top: 0;
+  }
+
+  .image:nth-child(2),
+  .image:nth-child(5) {
+    margin-top: 48px;
+  }
+
+  .content .right p {
+    font-size: 18px;
+  }
+
+  .roll {
+    font-size: 12px;
+    right: calc(var(--pr, 0) - 12px);
+    top: calc(var(--pt, 0) + 6px);
+  }
+
+  .image > h4 {
+    font-size: 18px;
+  }
+}
